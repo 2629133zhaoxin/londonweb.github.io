@@ -1,0 +1,137 @@
+/*map part*/
+body {
+  margin: 0;
+  padding: 0;
+}
+/*Create a position for the map on the page*/
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+/*title part*/
+/*title display and outline*/
+#features {
+  top: 0;
+  height: 100px;
+  margin-top: 0px;
+  width: 570px;
+}
+/*Set rules for how the map overlays-information box*/
+.map-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #FAFAFA;
+  margin-left: 1px;
+/*font style*/
+  font-family: Roboto, sans-serif;
+  overflow: auto;
+  border-radius: 3px;
+}
+/*font size and margin*/
+h1 {
+  margin: 10px;
+  font-size: 18px;
+}
+h2 {
+  margin: 10px;
+  font-size: 15px;
+}
+/*hover style*/
+p1 {
+  margin: 10px;
+  font-size: 14px;
+}
+
+
+
+/*popup part*/
+/*popup size and style*/
+.my-popup .mapboxgl-popup-content {
+  width: 300px;
+  background: #EFEBE9;
+  border-top: 50px black;
+  padding: 20px;
+  color: black;
+}
+/*popup title*/
+h3 {
+  font-size: 15px;
+  font-family: Lato, sans-serif;
+}
+/*popup title style*/
+p {
+  font-size: 13px;
+  font-family: Lato, sans-serif;
+}
+
+
+
+/*control part*/
+/*search control*/
+.mapboxgl-ctrl-geocoder {
+  width: 250px !important;
+}
+
+
+
+/*button part*/
+#frame {
+  position: absolute;
+  width: 0;
+  bottom: 0;
+  margin-bottom: 20px;
+}
+button {
+  margin: 1px;
+}
+.custom-btn {
+  width: 120px;
+  height: 35px;
+  color: #FAFAFA;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: Lato, sans-serif;
+  position: relative;
+  display: inline-block;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+}
+/*button1*/
+.btn-1 {
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: #D7CCC8;
+}
+.btn-1:hover {
+  color: #EF5350;
+  background: #FAFAFA;
+}
+.btn-1:before,
+.btn-1:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #EF5350;
+}
+.btn-1:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn-1:hover:before,
+.btn-1:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
